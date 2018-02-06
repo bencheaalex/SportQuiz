@@ -137,7 +137,7 @@ public class Ski extends AppCompatActivity {
         if (seconds < 10) timeLeftText += "0";
         timeLeftText += seconds;
         countDownText.setText(timeLeftText);
-        if (minutes == 0 && seconds == 1) {
+        if (minutes == 0 && seconds == 0) {
             Toast.makeText(getApplicationContext(), getResources().getString(R.string.message_out_of_time), Toast.LENGTH_LONG).show();
             submitMethod();
         }
